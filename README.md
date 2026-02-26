@@ -17,3 +17,17 @@ We will be simulating Guangzhou’s metro system using Dijkstra’s algorithm to
 ### Implementation ###
 We first create an adjacency list which will be used to form our graph with nodes and edges. The adjacency list will provide us with the nodes, the neighboring nodes, and the distance between adjacent nodes. The graph that is created will be ‘G’ which is then used as an input for the function. 
 The function used that implements Dijkstra’s algorithm, outputs the shortest path from the source to the destination as well as the total distance traveled. In our first example, we use ‘S1’ as the source and ‘S21’ as the destination. The function takes three inputs, G for the graph, the source, and the destination. Our output using S1 and S21 gives us a total travel distance of 12km and the shortest path by traveling along the following nodes: ['S1', 'S2', 'S3', 'S7', 'S6', 'S20', 'S21']. 
+
+<img width="468" height="311" alt="image" src="https://github.com/user-attachments/assets/bd13340c-af70-4222-8bd8-ad83cd0cd45b" />
+
+We will also test two other cases to ensure that our algorithm is implemented correctly, and it is indeed providing us with the shortest path between the two points. In figure 2 below, we start at S1 and set our destination to S18.
+
+<img width="468" height="311" alt="image" src="https://github.com/user-attachments/assets/4ecc1cf2-9464-45b5-8330-12858b11f344" />
+
+In figure 3 below, we set S1 as the starting point and set S19 as our destination.
+
+<img width="468" height="311" alt="image" src="https://github.com/user-attachments/assets/1ffa0c10-7075-4b51-b540-72f59477b2ba" />
+
+### Summary ###
+As we can see from our test cases, Dijkstra’s algorithm is able to find us the shortest path when given a graph with edges that contain only positive weights. In this project, we provided an adjacency list that simulated a metro system, and our goal was to find the shortest distance between two stations. We were able to determine the shortest distance in three different test cases. 
+
